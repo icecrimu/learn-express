@@ -3,7 +3,7 @@ const app = express()
 
 app.get("/", (req, res) => {
   console.log("Here")
-  res.send("Hi")
+  res.json({ message: "Error" })
 })
 
 app.listen(3000)
