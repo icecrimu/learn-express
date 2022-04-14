@@ -8,4 +8,8 @@ app.get("/", (req, res) => {
   res.render("index", { text: "Goodbye" })
 })
 
+const userRoute = require("./routes/users")
+
+app.use("/users", userRoute)
+
 app.listen(3000)
